@@ -1,0 +1,63 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Wed Feb 21 22:34:40 2024
+[*]
+[dumpfile] "C:\Users\allan\source\repos\Lab05-PipelinesAndHazards\lab05.vcd"
+[dumpfile_mtime] "Tue Feb 20 21:28:42 2024"
+[dumpfile_size] 42549
+[savefile] "C:\Users\allan\source\repos\Lab05-PipelinesAndHazards\lab05.gtkw"
+[timestart] 0
+[size] 2130 658
+[pos] 25 469
+*-17.487450 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] processor_tb.
+[treeopen] processor_tb.uut.
+[treeopen] processor_tb.uut.mem_wb_i15.
+[sst_width] 197
+[signals_width] 190
+[sst_expanded] 1
+[sst_vpaned_height] 166
+@28
+processor_tb.clk
+processor_tb.rst
+@22
+processor_tb.prog_count[31:0]
+processor_tb.instr_opcode[5:0]
+processor_tb.reg1_addr[4:0]
+processor_tb.reg1_data[31:0]
+processor_tb.write_reg_addr[4:0]
+processor_tb.write_reg_data[31:0]
+@200
+-$zero
+@22
+processor_tb.uut.cpu_registers_i1.\RFILE[0][31:0]
+@200
+-$v0
+@22
+processor_tb.uut.cpu_registers_i1.\RFILE[2][31:0]
+@200
+-$v1
+@22
+processor_tb.uut.cpu_registers_i1.\RFILE[3][31:0]
+@200
+-$a0
+@22
+processor_tb.uut.cpu_registers_i1.\RFILE[4][31:0]
+@200
+-$a1
+@22
+processor_tb.uut.cpu_registers_i1.\RFILE[5][31:0]
+@200
+-$a2
+@22
+processor_tb.uut.cpu_registers_i1.\RFILE[6][31:0]
+@200
+-$a3
+@22
+processor_tb.uut.cpu_registers_i1.\RFILE[7][31:0]
+@200
+-$t0
+@22
+processor_tb.uut.cpu_registers_i1.\RFILE[8][31:0]
+[pattern_trace] 1
+[pattern_trace] 0
