@@ -39,7 +39,7 @@ That’s a read-after-write hazard and it makes $v1 wrong. Since later instructi
 
 There’s also a control hazard at the beq instruction. The processor keeps fetching instructions before it knows whether the branch will actually be taken so extra instructions can move through the pipeline even if they shouldn’t. That also contributes to the differences in the results.
 
-So overall, the mismatch mostly comes from the load-use RAW hazard at the beginning and the control hazard from the branch.
+So overall, the mismatch mostly comes from the load-use hazard at the beginning and the control hazard from the branch.
 Moving from this we can find the fix for them in section 3.
 
 
