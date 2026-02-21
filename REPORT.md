@@ -44,12 +44,11 @@ Moving from this we can find the fix for them in section 3.
 
 
 ## Section 3 — Instruction to avoid a hazard
-In order to fix this issue of control hazards a instruction can be inserted to be able to fix this issue.
-this instruction is: 
+In order to fix this issue of load use hazard a instruction can be inserted to be able to fix this issue.
+this instruction is sll $zero, $zero, 0
 
-sll $zero, $zero, 0
-
-This instruction allows for a no-op that does not change the value of any register or memory location. If we put this in between the lw and the add then we are able to add a one cycle delay that is
+This instruction allows for a no-op that does not change the value of any register or memory location. 
+ If we put this in between the lw and the add then we are able to add a one cycle delay that is
 able to give lw enough time to finish writing to $v0. Which allows add to have more time. 
 
 This then gets rid of the load use data hazard because the add instruction no longer reads the register too early. Which now allows the pieline to work correctly.
