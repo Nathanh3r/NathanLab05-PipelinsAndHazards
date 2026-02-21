@@ -746,8 +746,8 @@ module lab05_pipelined (
   wire [4:0] s10;
   wire [4:0] dst_addr_temp;
   wire [31:0] dst_data_temp;
+  wire [31:0] src1_out_temp;
   wire [31:0] src2_out_temp;
-  wire [31:0] src2;
   wire [31:0] instr;
   wire [4:0] s11;
   wire [15:0] s12;
@@ -812,8 +812,8 @@ module lab05_pipelined (
     .src2_addr( s10 ),
     .dst_addr( dst_addr_temp ),
     .data_in( dst_data_temp ),
-    .src1_out( src2_out_temp ),
-    .src2_out( src2 )
+    .src1_out( src1_out_temp ),
+    .src2_out( src2_out_temp )
   );
   // alu
   alu alu_i2 (
@@ -864,8 +864,8 @@ module lab05_pipelined (
     .M( s37 ),
     .EX( s38 ),
     .ip_in( s35 ),
-    .rd1_in( src2_out_temp ),
-    .rd2_in( src2 ),
+    .rd1_in( src1_out_temp ),
+    .rd2_in( src2_out_temp ),
     .iv_in( s13 ),
     .dr1_in( s10 ),
     .dr2_in( s11 ),
@@ -1008,7 +1008,7 @@ module lab05_pipelined (
   );
   assign PC = PC_temp;
   assign opcode = opcode_temp;
-  assign src1_out = src2_out_temp;
+  assign src1_out = src1_out_temp;
   assign src2_out = src2_out_temp;
   assign dst_addr = dst_addr_temp;
   assign dst_data = dst_data_temp;
