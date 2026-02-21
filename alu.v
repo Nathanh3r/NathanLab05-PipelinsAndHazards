@@ -1,7 +1,7 @@
 //=========================================================================
 // Name & Email must be EXACTLY as in Gradescope roster!
-// Name: 
-// Email: 
+// Name: Nathan Herrera
+// Email: nherr044@ucr.edu
 // 
 // Assignment name: 
 // Lab section: 
